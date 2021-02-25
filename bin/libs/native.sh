@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source "bin/init/env.sh"
-./gradlew TMessagesProj:stripFullFossDebugSymbols || exit 1
+./gradlew TMessagesProj:stripFullFossDebugSymbols --stacktrace || exit 1
 
 OUT=TMessagesProj/build/intermediates/stripped_native_libs/fullFoss/out/lib
 DIR=TMessagesProj/src/main/libs
